@@ -11,9 +11,9 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
                 .allowedOrigins(
-                        "http://localhost:3000",
-                        "http://localhost:5173",
-                        "https://library-management-frontend-chi-nine.vercel.app")
+                        "https://library-management-frontend-chi-nine.vercel.app",
+                        "https://library-management-frontend-c9m4ucn3s-ntub1350501.vercel.app",
+                        "https://library-management-frontend-git-main-ntub1350501.vercel.app")
                 .allowedMethods("GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
